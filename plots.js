@@ -4,6 +4,7 @@ var sortedCities = cityGrowths.sort((a,b) => a.Increase_from_2016 - b.Increase_f
 
 var topFiveCityNames = cityGrowths.map(city => city.City);
 var topFiveCityGrowths = cityGrowths.map(city => parseInt(city.Increase_from_2016));
+topFiveCityNames(0,4);
 
 
 var trace = {
