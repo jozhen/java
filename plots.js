@@ -1,10 +1,11 @@
 //Plotly.newPlot("plotArea", [{x: [1, 2, 3], y: [10, 20, 30]}]);
 
 var sortedCities = cityGrowths.sort((a,b) => a.Increase_from_2016 - b.Increase_from_2016).reverse(); 
+var topFiveCities = sortedCities.slice(0,5);
 
 var topFiveCityNames = cityGrowths.map(city => city.City);
 var topFiveCityGrowths = cityGrowths.map(city => parseInt(city.Increase_from_2016));
-topFiveCityNames(0,4);
+
 
 
 var trace = {
